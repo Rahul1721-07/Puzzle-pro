@@ -28,7 +28,7 @@ import {
   getMuted,
 } from './utils/audio';
 import { getBestScores, saveBestScore } from './utils/storage';
-import { Play, Sparkles } from 'lucide-react';
+import { Play, Sparkles, HelpCircle } from 'lucide-react';
 
 export default function App() {
   // Game Setup State (Default: Change / Swap Pieces mode)
@@ -386,13 +386,14 @@ export default function App() {
       <footer className="w-full py-4 text-center text-xs text-slate-500 border-t border-slate-900 bg-slate-950/80">
         <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <span>
-            Crafted with React 19, Tailwind CSS v3 & Web Audio API
+            Crafted by Rahul 💓🥰💓
           </span>
           <button
-            onClick={() => setShowDocsModal(true)}
-            className="text-purple-400 hover:text-purple-300 underline font-medium"
+            onClick={() => setShowHelpModal(true)}
+            className="text-purple-400 hover:text-purple-300 underline font-medium cursor-pointer inline-flex items-center gap-1.5 transition-colors"
           >
-            Read How It Works & Architecture Specs
+            <HelpCircle className="w-3.5 h-3.5" />
+            <span>How to play</span>
           </button>
         </div>
       </footer>

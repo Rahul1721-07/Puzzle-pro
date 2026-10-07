@@ -18,9 +18,6 @@ export function Navbar({ isMuted, onToggleMute, onOpenHelp, onOpenDocs, onResetG
               <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight gradient-text font-display m-0">
                 PhotoShuffle Pro
               </h1>
-              <span className="hidden sm:inline-block text-[11px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">
-                React + Tailwind
-              </span>
             </div>
             <p className="text-xs text-slate-400 hidden sm:block">
               Interactive Image Puzzle & Sliding Challenge
